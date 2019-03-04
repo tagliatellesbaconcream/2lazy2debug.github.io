@@ -2,7 +2,6 @@
   "name": "2lazy2debug.github.io",
   "version": "1.0.0",
   "description": "My personal lazy website",
-  "main": "index.js",
   "scripts": {
     "test": "test",
     "build-css": "stylus source/stylesheets/index.styl -o static/css",
@@ -10,7 +9,9 @@
     "clean": "rm -rf static/css && mkdir -p static/css",
     "build": "npm run clean && npm run build-css",
     "watch": "npm run clean && npm run watch-css & nodemon server -e js,jade",
-    "start": "node server"
+    "start": "node server",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -33,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/2lazy2debug/2lazy2debug.github.io/issues"
   },
-  "homepage": "https://github.com/2lazy2debug/2lazy2debug.github.io#readme",
+  "homepage": "https://2lazy2debug.github.io/2lazy2debug.github.io",
   "dependencies": {
     "express": "^4.16.4",
     "gh-pages": "^2.0.1",
