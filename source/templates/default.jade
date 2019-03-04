@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='/css/index.css')
+    title 2lazy2.dev - Finest shitposting
+  body
+    .header
+      h1.page-title 2lazy2.dev - Finest shitposting.
+
+    ul.nav
+      li: a(href='/') Home
+      li: a(href='#news') Shitposting
+      li: a(href='#about') More shit
+      li: a(href='#contact') Even more shit
+    
+    .main-content
+      block content
+
+    .footer
+      p. 
+        Copyright © 2019 2lazy2debug (Manuel Cabras)
+      p. 
+        Made with <3 with #[a(href="https://pages.github.com") GitHub Pages], powered by #[a(href="https://nodejs.org") NodeJS].

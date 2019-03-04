@@ -1,0 +1,52 @@
+{
+  "name": "2lazy2debug.github.io",
+  "version": "1.0.0",
+  "description": "My personal lazy website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "build-css": "stylus source/stylesheets/index.styl -o static/css",
+    "watch-css": "stylus source/stylesheets/index.styl -o static/css -w",
+    "clean": "rm -rf static\\css && mkdir -p static\\css",
+    "build": "npm run clean && npm run build-css",
+    "watch": "npm run clean && npm run watch-css & nodemon server -e js,jade",
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2lazy2debug/2lazy2debug.github.io.git"
+  },
+  "keywords": [
+    "2lazy2debug",
+    "dev",
+    "verge",
+    "vergecurrency",
+    "lazy",
+    "developer",
+    "blockchain",
+    "cryptocurrency",
+    "java",
+    "android"
+  ],
+  "author": "2lazy2debug - Manuel Cabras)\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5C (Maa\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001bnuel Cabras)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/2lazy2debug/2lazy2debug.github.io/issues"
+  },
+  "homepage": "https://github.com/2lazy2debug/2lazy2debug.github.io#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "gh-pages": "^2.0.1",
+    "grunt": "^1.0.3",
+    "jade": "^1.11.0",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.9.2",
+    "stylus": "^0.54.5"
+  },
+  "devDependencies": {
+    "connect": "^3.6.6",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-jade-tasks": "0.0.0",
+    "serve-static": "^1.13.2"
+  }
+}
