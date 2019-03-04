@@ -4,14 +4,14 @@
   "description": "My personal lazy website",
   "scripts": {
     "test": "test",
+    "clean": "rm -rf static/css index.html && mkdir -p static/css",
     "build-css": "stylus source/stylesheets/index.styl -o static/css",
-    "watch-css": "stylus source/stylesheets/index.styl -o static/css -w",
-    "clean": "rm -rf static/css && mkdir -p static/css",
-    "build": "npm run clean && npm run build-css",
+    "build-jade" :"jade source/templates/default.jade -o . && mv default.html index.html",
+    "build": "npm run clean && npm run build-css && npm run build-jade",
     "watch": "npm run clean && npm run watch-css & nodemon server -e js,jade",
+    "watch-css": "stylus source/stylesheets/index.styl -o static/css -w",
     "start": "node server",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,7 @@
     "java",
     "android"
   ],
-  "author": "2lazy2debug - Manuel Cabras)\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5C (Maa\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001bnuel Cabras)",
+  "author": "2lazy2debug - (Manuel Cabras)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/2lazy2debug/2lazy2debug.github.io/issues"
