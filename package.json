@@ -36,7 +36,7 @@
   },
   "homepage": "https://2lazy2debug.github.io/2lazy2debug.github.io",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "gh-pages": "^2.0.1",
     "grunt": "^1.0.3",
     "jade": "^1.11.0",
