@@ -38,7 +38,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "gh-pages": "^2.0.1",
-    "grunt": "^1.0.3",
+    "grunt": "^1.5.3",
     "jade": "^1.11.0",
     "morgan": "^1.9.1",
     "nodemon": "^1.9.2",
